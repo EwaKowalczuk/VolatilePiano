@@ -1,0 +1,18 @@
+
+
+http://code.tutsplus.com/tutorials/build-your-first-javascript-library--net-26796
+
+http://checkman.io/blog/creating-a-javascript-library/
+
+
+
+TODO
+Non-blocking scripts
+http://yuiblog.com/blog/2008/07/22/non-blocking-scripts/
+
+It turns out that there is an easy solution to the download blocking problem: include scripts dynamically via DOM methods. How do you do that? Simply create a new <script> element and append it to the <head>:
+
+var js = document.createElement('script');
+js.src = 'myscript.js';
+var head = document.getElementsByTagName('head')[0];
+head.appendChild(js);
