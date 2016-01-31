@@ -5,10 +5,21 @@
 
         var VolatilePiano = {};
         var defaultSize = "10mm";
+		var canvas;
         VolatilePiano.test = function(){
             alert("Hello from piano.");
         }
-        return VolatilePiano;
+       
+		VolatilePiano.setCanvas = function(c){
+			this.canvas = c;
+		}
+
+		VolatilePiano.test = function(){
+            alert("Hello from piano.");
+        }
+        
+		
+		return VolatilePiano;
     }
 
     //define globally if it doesn't already exist
